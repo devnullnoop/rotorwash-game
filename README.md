@@ -79,12 +79,24 @@ If that is miserable, hit **Tab** for the stability assist while you learn.
 - A **procedural island**, generated entirely from a seed: terrain, rivers and
   lakes with real drainage, farmland, forests, villages and towns placed by a
   settlement census, roads with junctions and bridges, boats, livestock, birds.
-- A **day/night cycle** with drifting weather, positional audio, and a full
-  instrument HUD with a moving map.
+- **Living weather**: the sky drifts between clear, hazy and overcast — and
+  sometimes keeps going. Rain squalls roll in over a couple of minutes: the deck
+  seals and darkens, rain curtains hang on the horizon, and then you're in it —
+  rain past the canopy, the ground soaking dark and glossy, the sea flattened to
+  pewter and dancing with raindrop rings. Storms bring lightning, with thunder
+  that arrives late from far-off strikes. When the squall moves through, the
+  island stays wet and glistening for a few minutes while it dries out.
+- A **day/night cycle**, positional audio (the rain and thunder are synthesized
+  live, like everything else you hear), and a full instrument HUD with a moving
+  map.
 
 Change the seed in the settings menu and you get a completely different island.
 The default map is a compact one where you can see the whole coast at once;
 there are bigger ones in there too, and they are less finished.
+
+![A rain squall closing over the village](screenshots/storm-village.jpg)
+
+![Heavy rain over the coast, from altitude](screenshots/rain-squall-coast.jpg)
 
 ![In flight, with the HUD](screenshots/in-flight-hud.jpg)
 
