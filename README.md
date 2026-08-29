@@ -86,13 +86,19 @@ If that is miserable, hit **Tab** for the stability assist while you learn.
   pewter and dancing with raindrop rings. Storms bring lightning, with thunder
   that arrives late from far-off strikes. When the squall moves through, the
   island stays wet and glistening for a few minutes while it dries out.
-- A **day/night cycle**, positional audio (the rain and thunder are synthesized
-  live, like everything else you hear), and a full instrument HUD with a moving
-  map.
+- A **day/night cycle** on a moving sun and moon. Sunrise and sunset put the warm
+  band where the sun actually is, the sea takes a glitter road from whichever one
+  is up, and after dark the island goes properly dark — village windows and street
+  lamps become the only warm light in the frame, and the moon is bright enough to
+  fly by.
+- **Positional audio** (the rain and thunder are synthesized live, like everything
+  else you hear), and a full instrument HUD with a moving map.
 
 Change the seed in the settings menu and you get a completely different island.
 The default map is a compact one where you can see the whole coast at once;
 there are bigger ones in there too, and they are less finished.
+
+![Moonlight on the water, village lights on the headland](screenshots/moonlit-night.jpg)
 
 ![A rain squall closing over the village](screenshots/storm-village.jpg)
 
