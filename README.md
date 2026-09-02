@@ -120,6 +120,16 @@ I think the answer is genuinely interesting, which is why it's here. The physics
 is real and validated. The world still has a way to go on believability, and I
 know it. Some of it is beautiful and some of it is obviously fake.
 
+### Where this started
+
+Day one — 30 June 2026. The flight model underneath was already real and
+validated; this is everything that sat on top of it. A box, a rotor disk on a
+stick, a two-line text HUD, and a flat plane to sit on:
+
+![Day one: a box and a rotor disk on an empty plane](screenshots/origin-day-one.jpg)
+
+Every other picture on this page is the same project about two months later.
+
 ![Farmland and coastline from altitude](screenshots/farmland-coast.jpg)
 
 ## Tell me what you think
