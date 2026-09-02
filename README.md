@@ -108,8 +108,8 @@ there are bigger ones in there too, and they are less finished.
 
 ## About this project — the honest version
 
-I'm a developer, and a bad one at that. I am **not** a game developer. I had never written a line of
-Godot, a shader, or a flight model before this.
+I'm a developer, and a bad one at that. I am **not** a game developer. I had
+never written a line of Godot, a shader, or a flight model before this.
 
 This is, frankly, somewhat vibe coded. It was built almost entirely in
 collaboration with AI, as an experiment to see how far AI could carry a
