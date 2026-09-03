@@ -71,6 +71,19 @@ If that is miserable, hit **Tab** for the stability assist while you learn.
 
 ## What's actually in here
 
+- **Something to do.** Set down on a friendly pad and it offers you a load for a
+  named settlement — fly it there and put it down in the landing zone beside the
+  place. The cargo has real weight, and the weight is the flight model's, not a
+  number in a menu: a heavy load wants more collective to hover, more pedal to
+  hold heading, and will not come off the ground in a hover at all, so you learn
+  to run it on. Put it down harder than about 1.6 m/s and you break the freight
+  well before you break the aircraft, and only what arrives intact counts.
+- **Fuel that means something.** Burn is priced against the power the engine is
+  actually delivering, so a hover drinks about twice a cruise and a heavy load
+  costs you range. The gauge tells you minutes remaining at the power you are
+  drawing right now, which is the only honest answer to "can I get home". Run the
+  tank dry and the engine just stops — you are in an autorotation, and the landing
+  is still yours to make.
 - A **blade-element flight model** written in Rust — the rotor is integrated
   across blade sections rather than faked with a lift curve. Hover figure of
   merit 0.70, a correct power-required bucket from 0–140 kt, correct control
