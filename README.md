@@ -24,10 +24,38 @@ complain the first time:
 
 ## Controls
 
-Everything is keyboard. The collective is a **lever that stays where you put it**;
-cyclic and pedals are **spring-centred** and only act while held.
+The collective is a **lever that stays where you put it**; cyclic and pedals are
+**spring-centred** and only act while held.
 
-### Flying
+**Use a controller if you have one.** A helicopter is four continuous axes and a
+keyboard has none of them — every key is fully on or fully off, so on the arrow
+keys you are metering the cyclic by counting milliseconds. Any Xbox, PlayStation
+or generic pad is picked up automatically at launch, with nothing to configure.
+On a Mac, hold the small pair button on the top edge of an Xbox controller until
+the logo flashes, then add it under **System Settings → Bluetooth** (or just plug
+it in with USB-C).
+
+### Flying — controller
+
+| Input | Does |
+|---|---|
+| **Left stick ↑ / ↓** | Collective. The stick is spring-centred, so it *moves* the lever rather than being it: push and hold to raise it, let go and it stays. |
+| **Right stick** | Cyclic. Fore/aft pitches, left/right rolls. |
+| **Left stick ← / →** | Pedals — yaw the nose. |
+| **LT** / **RT** | Pedals as well, if you would rather fly the yaw on the triggers. |
+| **A** | Take / return the water bucket. |
+| **X** | Drop the water. |
+| **Y** | Accept a cargo contract. |
+| **B** | Jettison the load. |
+| **LB** *(hold)* | Look down at the slung load. |
+| **Start** | Cycle the assist. |
+| **Back** | Respawn. |
+
+The sticks have a dead band and an expo curve, so the middle of the travel —
+where a hover is actually flown — is far finer than the ends, while the stops
+still give you full authority.
+
+### Flying — keyboard
 
 | Key | Does |
 |---|---|
@@ -38,6 +66,16 @@ cyclic and pedals are **spring-centred** and only act while held.
 | **X** *(hold)* | Cut the throttle. Autorotation practice. |
 | **Tab** | Cycle the assist: off → SAS → full assist. |
 | **R** | Respawn after a crash. |
+
+### The job
+
+| Key | Does |
+|---|---|
+| **F** | Accept the cargo contract offered on the pad you are stood on. |
+| **J** | Jettison the slung load. |
+| **B** | Take or return the water bucket — you must be **landed on a pad**. |
+| **G** | Drop the water. |
+| **C** *(hold)* | Hook view: look down at the load and the ground under it. |
 
 ### Camera
 
@@ -104,6 +142,14 @@ If that is miserable, hit **Tab** for the stability assist while you learn.
   is up, and after dark the island goes properly dark — village windows and street
   lamps become the only warm light in the frame, and the moon is bright enough to
   fly by.
+- **A wildfire, and a bucket to fight it with.** Fire spreads on the fuel that is
+  really under it — it runs about ten times faster uphill than down and four times
+  faster downwind than up, and open water stops it dead. Take the bucket from a
+  pad, hover until it is in a lake or the sea to fill it, then lay 900 kg of water
+  on the burning edge. One drop will not kill a canopy fire, so you will be
+  shuttling, and the round trip to the nearest water is the decision the sortie is
+  really about. Ground that has burnt goes black, and the trees standing in it
+  char.
 - **Positional audio** (the rain and thunder are synthesized live, like everything
   else you hear), and a full instrument HUD with a moving map.
 
