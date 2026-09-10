@@ -64,7 +64,7 @@ still give you full authority.
 | **←** / **→** | Cyclic left / right — roll. |
 | **Q** / **E** | Pedals — yaw the nose left / right. |
 | **X** *(hold)* | Cut the throttle. Autorotation practice. |
-| **Tab** | Cycle the assist: off → SAS → full assist. |
+| **Tab** | Cycle the assist: off → SAS → full assist. (Fun mode is opt-in from Settings and Tab cannot reach it.) |
 | **R** | Respawn after a crash. |
 
 ### The job
@@ -104,6 +104,32 @@ and tip, because a real helicopter is unstable and this one is modelled that way
 Tap the arrow keys in small inputs to keep it level.
 
 If that is miserable, hit **Tab** for the stability assist while you learn.
+
+### Flying with a kid — Fun mode
+
+I fly this with my 8-year-old and we both found it too twitchy, so there is now
+a fourth assist level in **Settings → Assist** called **Fun (kid mode)**. It is a
+different control law, not a stronger version of the same one:
+
+- The **right stick is where the helicopter points.** Stick position *is* the
+  bank angle and *is* the dive angle, and the command is rate-limited so a
+  slammed stick swoops instead of snapping.
+- The **left stick is altitude.** Up is up, down is down, centre holds the
+  height you are at.
+- **Turns carve.** Bank it and the nose comes round on its own, on the proper
+  coordinated rate, with the collective easing up so the turn holds its height
+  instead of sagging out of it.
+- **You cannot break it.** No rolling inverted, no settling with power, no
+  running the tail rotor out of authority, and it will not let you fly a dive
+  into the ground.
+
+Tip past about 30 degrees and it commits — the speed cap opens and you get a
+proper dive, then pull back and zoom.
+
+It is not on rails. The same blade-element flight model is still underneath, so
+the machine still has weight and still lags behind you; that is deliberate,
+because without inertia there is nothing to carve. Tab cannot reach Fun mode or
+leave it, so a kid mashing buttons cannot fall out of it by accident.
 
 ![Golden hour over a village](screenshots/golden-hour.jpg)
 
@@ -153,6 +179,10 @@ If that is miserable, hit **Tab** for the stability assist while you learn.
 - **Positional audio** (the rain and thunder are synthesized live, like everything
   else you hear), and a full instrument HUD with a moving map.
 
+![A wildfire on the ridge at sunset](screenshots/wildfire-ridge.jpg)
+
+![The fire from the air at golden hour](screenshots/wildfire-golden.jpg)
+
 Change the seed in the settings menu and you get a completely different island.
 The default map is a compact one where you can see the whole coast at once;
 there are bigger ones in there too, and they are less finished.
@@ -178,6 +208,14 @@ actually get before falling over.
 I think the answer is genuinely interesting, which is why it's here. The physics
 is real and validated. The world still has a way to go on believability, and I
 know it. Some of it is beautiful and some of it is obviously fake.
+
+In that spirit: **if you downloaded v0.7.0, v0.7.1 or v0.7.2, the wildfire never
+actually started.** The only code path that lit a fire was behind a developer
+environment variable, so three releases advertised a feature on this page that no
+player could reach. That is fixed in v0.8.0 and it is the kind of thing worth
+saying out loud rather than quietly correcting. Smoke is still the weakest thing
+in the frame — better than it was, but up close you can still see the individual
+puffs.
 
 ### Where this started
 
