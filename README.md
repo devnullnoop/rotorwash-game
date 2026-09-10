@@ -185,6 +185,8 @@ leave it, so a kid mashing buttons cannot fall out of it by accident.
 
 ![Low pass over the fire with 900 kg of water on the strop](screenshots/bucket-low-pass.jpg)
 
+![The convection column standing off the burning ridge](screenshots/fire-column.jpg)
+
 Change the seed in the settings menu and you get a completely different island.
 The default map is a compact one where you can see the whole coast at once;
 there are bigger ones in there too, and they are less finished.
@@ -217,12 +219,26 @@ environment variable, so three releases advertised a feature on this page that n
 player could reach. That is fixed in v0.8.0 and it is the kind of thing worth
 saying out loud rather than quietly correcting.
 
-Smoke is the worst thing in the game and I am not going to pretend otherwise.
-It is built like the rotorwash dust — discrete puffs with a short life and a
-fixed rise — so it cannot climb properly, cannot spread as it climbs, and thins
-by fading rather than by expanding. A real wildfire column is the most
-recognisable thing about a wildfire and this is not one. I know exactly why now,
-and it is a rewrite rather than a tuning, so it is the next job.
+Smoke was the worst thing in the game for three releases, and the reason turned
+out to be a single number. Rendering the plume and staring at it got nowhere; I
+had to go and measure it. Integrating the plume's own motion equations and
+counting how many sprites actually overlap at each height gave this:
+
+    30 m up: 0.13    150 m up: 0.14    400 m up: 0.13
+
+One sprite contributes 0.13. So the column was exactly **one sprite thick**, from
+the fire to the top — a handful of separated puffs strung through 600 m of sky,
+which is why it read as scattered specks and not as smoke. Nothing about the
+colour, the texture or the fade was ever going to fix that.
+
+The fix is not a prettier puff. Optical depth works out to `fill × alpha ÷
+footprint`, so at a fixed rendering budget the only free variable is how WIDE the
+plume is spread. Narrowing it — the eddies, not the wind, turned out to be what
+was smearing it 500 m across — bought about nine times the density for nothing.
+Then the sprites got smaller and there are now five times as many of them, which
+is the same lesson the rotorwash dust taught this project a month earlier: a
+metre-scale sprite is an *object*, and objects cannot pile up into a *medium*.
+It costs 1.5x the fill of the version that did not work.
 
 ### Where this started
 
