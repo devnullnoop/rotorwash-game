@@ -181,9 +181,9 @@ leave it, so a kid mashing buttons cannot fall out of it by accident.
 - **Positional audio** (the rain and thunder are synthesized live, like everything
   else you hear), and a full instrument HUD with a moving map.
 
-![A wildfire on the ridge at sunset](screenshots/wildfire-ridge.jpg)
+![Working the burning edge with a full bucket, the scar behind it](screenshots/fire-front-bucket.jpg)
 
-![The fire from the air at golden hour](screenshots/wildfire-golden.jpg)
+![Low pass over the fire with 900 kg of water on the strop](screenshots/bucket-low-pass.jpg)
 
 Change the seed in the settings menu and you get a completely different island.
 The default map is a compact one where you can see the whole coast at once;
@@ -215,9 +215,14 @@ In that spirit: **if you downloaded v0.7.0, v0.7.1 or v0.7.2, the wildfire never
 actually started.** The only code path that lit a fire was behind a developer
 environment variable, so three releases advertised a feature on this page that no
 player could reach. That is fixed in v0.8.0 and it is the kind of thing worth
-saying out loud rather than quietly correcting. Smoke is still the weakest thing
-in the frame — better than it was, but up close you can still see the individual
-puffs.
+saying out loud rather than quietly correcting.
+
+Smoke is the worst thing in the game and I am not going to pretend otherwise.
+It is built like the rotorwash dust — discrete puffs with a short life and a
+fixed rise — so it cannot climb properly, cannot spread as it climbs, and thins
+by fading rather than by expanding. A real wildfire column is the most
+recognisable thing about a wildfire and this is not one. I know exactly why now,
+and it is a rewrite rather than a tuning, so it is the next job.
 
 ### Where this started
 
