@@ -119,9 +119,11 @@ different control law, not a stronger version of the same one:
 - **Turns carve.** Bank it and the nose comes round on its own, on the proper
   coordinated rate, with the collective easing up so the turn holds its height
   instead of sagging out of it.
-- **You cannot break it.** No rolling inverted, no settling with power, no
-  running the tail rotor out of authority, and it will not let you fly a dive
-  into the ground.
+- **It is forgiving, not invincible.** No rolling inverted, no settling with
+  power, no running the tail rotor out of authority. The ground is the exception
+  on purpose: let go of the controls and you are safe, but hold the descend
+  control all the way down and you will put it into the dirt. A mode you cannot
+  crash is a mode where the controls stop meaning anything.
 
 Tip past about 30 degrees and it commits — the speed cap opens and you get a
 proper dive, then pull back and zoom.
