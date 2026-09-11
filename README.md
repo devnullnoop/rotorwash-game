@@ -181,9 +181,21 @@ leave it, so a kid mashing buttons cannot fall out of it by accident.
 - **Positional audio** (the rain and thunder are synthesized live, like everything
   else you hear), and a full instrument HUD with a moving map.
 
+![Low pass over the fire with 900 kg of water on the strop](screenshots/bucket-low-pass.jpg)
+
+The fire and its smoke are drawn from the same numbers the simulation runs on.
+The sim carries Byram's fireline intensity — how many kilowatts per metre of
+front the fire is actually putting out — and the flames read it: their length,
+how deep the burning band is, and how far they lean downwind all come out of
+that one quantity. So a grass fire lies over at about 46 degrees with flames a
+metre or two high, a crown fire stands nearly upright with ten-metre ones, and
+the slow-moving back edge of a fire draws visibly shorter flames than the head
+racing away from it.
+
 ![Working the burning edge with a full bucket, the scar behind it](screenshots/fire-front-bucket.jpg)
 
-![Low pass over the fire with 900 kg of water on the strop](screenshots/bucket-low-pass.jpg)
+The column rises the way a real convection column does, its updraft set by the
+fire's own heat output, so a big fire punches a plume that a small one cannot.
 
 ![The convection column standing off the burning ridge](screenshots/fire-column.jpg)
 
@@ -239,6 +251,20 @@ Then the sprites got smaller and there are now five times as many of them, which
 is the same lesson the rotorwash dust taught this project a month earlier: a
 metre-scale sprite is an *object*, and objects cannot pile up into a *medium*.
 It costs 1.5x the fill of the version that did not work.
+
+Then the flames got the same treatment, and the verdict on the old ones was
+blunt: *"what small fires would look like if they were HUGE."* Exactly right.
+Every 32 m cell was drawing one smooth symmetric mound — a campfire's silhouette,
+scaled up. A campfire is a point source; a wildfire is a *line*, deeper than it
+is tall, leaning downwind. It is now built that way, and the numbers behind it
+come out of the fire-behaviour literature rather than out of my eye.
+
+The best bug of the pass was found by the same person squinting at a screenshot
+and asking why part of the smoke was missing. It was: the ocean is a 16 km
+transparent plane, and without a render priority it sorted as nearer than the
+plume and painted over it wherever sea was behind the smoke. That had been true
+of everything transparent seen against open water, including the spray under the
+aircraft during a bucket dip.
 
 ### Where this started
 
