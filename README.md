@@ -200,8 +200,18 @@ fire's own heat output, so a big fire punches a plume that a small one cannot.
 ![The convection column standing off the burning ridge](screenshots/fire-column.jpg)
 
 Change the seed in the settings menu and you get a completely different island.
-The default map is a compact one where you can see the whole coast at once;
-there are bigger ones in there too, and they are less finished.
+The default map is a compact one where you can see the whole coast at once. As
+of v0.10.0 the Medium island is a real place too: 30-odd kilometres across and
+flyable end to end, with a horizon that finally matches it. Out in its steep
+country the roads change character — where the ground is too hard for a real
+road, the network climbs over the passes as narrow dirt tracks, telegraph line
+in tow.
+
+![A dirt track and its telegraph line climbing to the pass](screenshots/mountain-pass-track.jpg)
+
+![A cart track wandering the high pasture](screenshots/rolling-hills-track.jpg)
+
+![A harbour village where the paved road meets the jetty](screenshots/harbour-village-road.jpg)
 
 ![Moonlight on the water, village lights on the headland](screenshots/moonlit-night.jpg)
 
