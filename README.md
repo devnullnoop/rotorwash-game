@@ -83,6 +83,9 @@ still give you full authority.
 |---|---|
 | **Right-mouse + drag** | Look around from the chase camera. |
 | **Mouse wheel** | Zoom in / out. |
+| **C** (hold) / **LB** | Hook view — look straight down at the slung load or bucket. |
+| **V** / **D-pad ↓** | High tactical view — ~45° down on the aircraft, so bucket, ground and fire share one frame. |
+| **L** / **RB** | Landing light — a real nose searchlight that slews to keep its pool ahead of you on approach. |
 
 ### World & display
 
@@ -164,7 +167,9 @@ leave it, so a kid mashing buttons cannot fall out of it by accident.
   rain past the canopy, the ground soaking dark and glossy, the sea flattened to
   pewter and dancing with raindrop rings. Storms bring lightning, with thunder
   that arrives late from far-off strikes. When the squall moves through, the
-  island stays wet and glistening for a few minutes while it dries out.
+  island stays wet and glistening for a few minutes while it dries out. And the
+  sea now breaks on every shore — swell lines steepen and dump white water as
+  they shoal, building with the weather until a storm hammers the coast.
 - A **day/night cycle** on a moving sun and moon. Sunrise and sunset put the warm
   band where the sun actually is, the sea takes a glitter road from whichever one
   is up, and after dark the island goes properly dark — village windows and street
@@ -194,6 +199,8 @@ racing away from it.
 
 ![Working the burning edge with a full bucket, the scar behind it](screenshots/fire-front-bucket.jpg)
 
+![The fire up close — the front through its own smoke](screenshots/fire-front-close.jpg)
+
 The column rises the way a real convection column does, its updraft set by the
 fire's own heat output, so a big fire punches a plume that a small one cannot.
 
@@ -215,7 +222,11 @@ in tow.
 
 ![Moonlight on the water, village lights on the headland](screenshots/moonlit-night.jpg)
 
+![The landing light over a village on a rainy night](screenshots/landing-light-village.jpg)
+
 ![A rain squall closing over the village](screenshots/storm-village.jpg)
+
+![Storm surf wrapping the bays](screenshots/storm-surf-coast.jpg)
 
 ![Heavy rain over the coast, from altitude](screenshots/rain-squall-coast.jpg)
 
