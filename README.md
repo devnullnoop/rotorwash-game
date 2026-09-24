@@ -161,6 +161,10 @@ leave it, so a kid mashing buttons cannot fall out of it by accident.
 - A **procedural island**, generated entirely from a seed: terrain, rivers and
   lakes with real drainage, farmland, forests, villages and towns placed by a
   settlement census, roads with junctions and bridges, boats, livestock, birds.
+- **Water that behaves like water.** A lake seen along its surface goes bright,
+  because that is what water does at a grazing angle; a shallow river shows its
+  bed and a deep pool does not. Rivers run out of lakes and down to the sea as
+  one continuous system rather than three separate effects that meet at a seam.
 - **Living weather**: the sky drifts between clear, hazy and overcast — and
   sometimes keeps going. Rain squalls roll in over a couple of minutes: the deck
   seals and darkens, rain curtains hang on the horizon, and then you're in it —
@@ -286,6 +290,43 @@ transparent plane, and without a render priority it sorted as nearer than the
 plume and painted over it wherever sea was behind the smoke. That had been true
 of everything transparent seen against open water, including the spray under the
 aircraft during a bucket dip.
+
+### The lakes could never have worked, and the number was already in the file
+
+v0.12.0 is a water pass, and the honest version is that the main fix was sitting
+in my own source, written down, unused.
+
+Godot builds a surface's reflectance from one value: `F0 = 0.16 × SPECULAR²`
+face-on, and its grazing response from `f90 = clamp(8 × SPECULAR²)`. Real water
+is `F0 = 0.02` and `f90 = 1.0`, and exactly one number satisfies both:
+
+    0.16 × 0.354² = 0.0200     ← water's reflectance, face-on
+    8    × 0.354² = 1.002      ← grazing saturates at 1.0
+
+Inland water shipped at **0.15** — a quarter of the right face-on reflectance,
+and a grazing response capped at **0.18 instead of 1.0**. So a calm lake viewed
+*along* its surface, which is how you see one from a helicopter, could never
+brighten into a sky reflection. It rendered as a black slab. The 0.354 figure was
+already derived in a comment in the water shader, worked out from the engine
+binary, and then never applied to anything. I found it by reading the file after
+someone asked me why the water looked like nothing.
+
+The other one worth saying out loud: a white ring had been sweeping across the
+hills as you flew, painting rock onto slopes ahead of the aircraft. I was
+convinced it was terrain detail sharpening as it came closer, and built a
+complete explanation of that, and it was wrong — the terrain's slope is measured
+at a fixed spacing at every distance, so there was nothing to sharpen. What was
+actually happening is that the ground texture system runs two code paths, near
+and far, which weight grass differently, and the switch between them is a hard
+line at a fixed distance from the camera. So it rode along with you. Turning it
+off also made everything past 400 m render at full detail for the first time —
+including the landing light's pool on the ground at night, which had simply never
+been visible before.
+
+**Known and not yet fixed:** riverbanks and some hillsides wash out pale where
+the rock texture takes over too eagerly, and there is a turquoise cast on some
+steep faces. Both are visible if you go looking, and most of the screenshots on
+this page predate this release. They are the next thing.
 
 ### Where this started
 
