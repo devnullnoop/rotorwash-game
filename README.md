@@ -3,7 +3,7 @@
 A helicopter sim built on a real blade-element flight model, over a procedurally
 generated island. Free, no installer, macOS and Windows.
 
-![A coastal village from the air](screenshots/coastal-village.jpg)
+![900 kg of water onto a burning ridge](screenshots/water-drop-ridge.jpg)
 
 ## Download
 
@@ -192,6 +192,14 @@ leave it, so a kid mashing buttons cannot fall out of it by accident.
 
 ![Low pass over the fire with 900 kg of water on the strop](screenshots/bucket-low-pass.jpg)
 
+As of v0.12.1 you can see the drop. The water leaves the bucket as a falling
+column under real gravity, and the sheet does not burst on the ground until it
+has actually fallen — about 1.2 seconds from 12 m, about 2.7 from 45 — so the
+height you released from reads in the picture. Steam comes off only where the
+simulation says fuel was actually wetted, so what you see and what you scored
+cannot disagree. Before this the release changed the simulation and nothing
+else: the fire went out and the only evidence was a line of text.
+
 The fire and its smoke are drawn from the same numbers the simulation runs on.
 The sim carries Byram's fireline intensity — how many kilowatts per metre of
 front the fire is actually putting out — and the flames read it: their length,
@@ -201,7 +209,7 @@ metre or two high, a crown fire stands nearly upright with ten-metre ones, and
 the slow-moving back edge of a fire draws visibly shorter flames than the head
 racing away from it.
 
-![Working the burning edge with a full bucket, the scar behind it](screenshots/fire-front-bucket.jpg)
+![Working the burning edge with a full bucket on the strop](screenshots/fire-front-bucket.jpg)
 
 ![The fire up close — the front through its own smoke](screenshots/fire-front-close.jpg)
 
